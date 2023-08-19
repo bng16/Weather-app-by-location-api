@@ -4,12 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>weather app</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  
+  <div id="page1">
+    <div id="card">
+
+      <section1>
+        <input id="search-box" type="text" placeholder="City Name" spellcheck="false">
+
+        <button id="search-butt"><img src="asset/search.png" alt=""></button>
+      </section1>
+
+      <section2>
+        <div id="part1">
+          <img src="asset/clear.png">
+          <h1 id="temp">0°C</h1>
+          <h2 id="city">Agartala</h2>
+        </div>
+
+        <div id="part2">
+          <div id="left">
+            <img class="weather-icon" src="asset/humidity.png">
+
+            <div id="left-text">
+              <p id="Humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+            
+          </div>
+
+          <div id="right">
+            <img class="weather-icon" src="asset/wind.png">
+
+            <div id="right-text">
+              <p id="wind">50 km/hr</p>
+              <p>wind speed</p>
+            </div>
+            
+          </div>
+        </div>
+        
+      </section2>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
