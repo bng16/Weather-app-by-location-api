@@ -10,7 +10,7 @@
 <body>
 
   <div id="page1">
-    <video id="bg-video" src="asset/clear" autoplay muted loop></video>
+    <video id="bg-video" src="asset/df.asc" autoplay muted loop></video>
     <div id="card">
 
       <section1>
@@ -18,12 +18,15 @@
 
         <button id="search-butt"><img src="asset/search.png"></button>
       </section1>
+      <div id="error">
+        <p id="error-text">Invalaid city name</p>
+      </div>
 
       <section2>
         <div id="part1">
           <img id="weather-icon"src="asset/clear.png">
-          <h1 id="temp">0°C</h1>
-          <h2 id="city">Kolkata</h2>
+          <h1 id="temp">T°C</h1>
+          <h2 id="city">City</h2>
         </div>
 
         <div id="part2">
@@ -31,7 +34,7 @@
             <img class="sec-weather-icon" src="asset/humidity.png">
 
             <div id="left-text">
-              <p id="Humidity">50%</p>
+              <p id="Humidity">H%</p>
               <p>Humidity</p>
             </div>
             
@@ -41,7 +44,7 @@
             <img class="sec-weather-icon" src="asset/wind.png">
 
             <div id="right-text">
-              <p id="wind">50 km/hr</p>
+              <p id="wind">S km/hr</p>
               <p>wind speed</p>
             </div>
             
