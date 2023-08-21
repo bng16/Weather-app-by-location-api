@@ -12,7 +12,12 @@ const bgVideo=document.querySelector("#bg-video")
 async function checkWeather(city){
     const response= await fetch(apilink+city+unitApikey);
 
-    var data=await response.json();
+    if(response.status==404){
+        document.querySelector("#error").style.display="block";
+        bgVideo.src="asset/error.mp4";
+    }
+    else{
+        var data=await response.json();
 
     console.log(data);
 
@@ -49,8 +54,8 @@ async function checkWeather(city){
         bgVideo.src="asset/snow.mp4";
 
     }
+    }
 
-    document.querySelector("#section2").style.display="flex";
 
 
 }
